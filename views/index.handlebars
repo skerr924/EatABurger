@@ -1,0 +1,57 @@
+<h1>Go ahead... Eat a Burger!</h1>
+
+{{!-- row holds burgers - devoured and ready for devouring  --}}
+<div class = "row">
+    <div class = "col s6">
+        <h2>Which burger would you like to devour?</h2>
+
+        <ul>
+        {{#each burgers}}
+            {{#unless devoured}}
+            <h5>{{burger_name}}</h5><a class = "btn">DEVOUR!!</a>
+            {{/unless}}
+        {{/each}}
+        </ul>
+    </div>
+
+    <div class = "col s6">
+        <h2>Recently devoured</h2>
+
+        <ul>
+        {{#each burgers}}
+            {{#if devoured}}
+            <h5>{{burger_name}}</h5>
+            {{/if}}
+        {{/each}}
+        </ul>
+    </div>
+</div>
+
+
+<h2>Cook up your own burger masterpiece!</h2>
+<div class="row">
+    <div class="col s12">
+        Name your burger:
+        <div class="input-field inline">
+        <input id="burgerName" type="input">
+        <label for="burgerName">e.g. Double Bacon McWhopper Mac</label>
+    </div>
+</div>
+
+
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Cat Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleepy">Sleepy?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+    <input type="radio" name="sleepy" value="0"> Awake
+  </div>
+
+  <button type="submit">Add Cat</button>
+</form>
