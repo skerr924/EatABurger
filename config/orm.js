@@ -1,4 +1,4 @@
-var connection = require("../config/connection.js");
+var connection = require("./connection");
 
 // turns the number of paramenters we have for our mySQL command into a string of question marks 
 // length of string is equal to num 
