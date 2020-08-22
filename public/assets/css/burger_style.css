@@ -1,6 +1,9 @@
 body {
-  background-image: url(../img/burger_bw.jpg);
+  background-image: url(../img/diner.jpg);
   background-color: white;
+}
+h1, h2, h3, h4, h5, p, li, ul{ 
+  color: white; 
 }
 
 h1{ 
