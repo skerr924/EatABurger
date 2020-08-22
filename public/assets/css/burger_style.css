@@ -1,5 +1,20 @@
 body {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fpainted-burger-great-delicious-sandwich-black-and-white-grunge-retro-poster-vector-gm1193535093-339526119&psig=AOvVaw324IYZIK95KA6VPgC53BYx&ust=1598049996942000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKi-tKzuqusCFQAAAAAdAAAAABAQ");
-    background-repeat: repeat;
-    background-color: #cccccc;
-  }
+  background-image: url(../img/burger_bw.jpg);
+  background-color: white;
+}
+
+h1{ 
+  font-size: 24px;
+}
+
+h2{ 
+  font-size: 20px;
+}
+
+h3, h4, h5{ 
+  font-size: 18px;
+}
+
+li, ul{ 
+  font-size: 12px; 
+}

@@ -1,4 +1,4 @@
-var connection = require("./connection");
+var connection = require("./connection.js");
 
 // turns the number of paramenters we have for our mySQL command into a string of question marks 
 // length of string is equal to num 
@@ -14,6 +14,7 @@ function printQuestionMarks(num) {
 
 // converts and object with a key value pair into a string
 // {name: Bobby Flay} becomes "name='Bobby Flay'"
+
 function objToSql(ob) {
   var arr = [];
 

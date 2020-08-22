@@ -3,25 +3,24 @@ $(function() {
 
     $(".devourBtn").on("click", function(event){ 
         var id = $(this).data("id"); 
-        var newDevour = $(this).data("newdevour"); 
         var newDevourState = { 
-            devoured: newDevour
+            devoured: true
         }; 
 
-        $.ajax("/api/burgers"+id, { 
+        $.ajax("/api/burgers/"+id, { 
             type: "PUT", 
             data: newDevourState
         }).then(
             function(){ 
-                console.log("changed devoured state to ", newDevour); 
+                console.log("changed devoured state to true"); 
                 location.reload(); 
             }
         );
     });
 
-    $(".addBurger").on("submit", function(event) {
+    $(".addBurger").on("click", function(event) {
         event.preventDefault();
-
+        console.log("clicked")
         var newBurger = {
             burger_name: $("#burgerName").val().trim(),
         };
