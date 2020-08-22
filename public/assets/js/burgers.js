@@ -38,17 +38,17 @@ $(function() {
         );
     });
 
-    //add delete option here later 
-    // $("DELETE BUTTON ID/CLASS").on("click", function(event){ 
-    //     var id = $(this).data("id"); 
+    $(".deleteBtn").on("click", function(event){ 
+        event.preventDefault(); 
+        console.log("delete button clicked")
 
-    //     $.ajax("/api/burgers/" + id, { 
-    //         type: DELETE
-    //     }).then(
-    //         function(){
-    //             console.log("deleted burger", id); 
-    //             location.reload(); 
-    //         }
-    //     );
-    // });
+        $.ajax("/api/burgers/all", { 
+            type: "DELETE"
+        }).then(
+            function(){
+                console.log("deleted all burgers"); 
+                location.reload(); 
+            }
+        );
+    });
 });

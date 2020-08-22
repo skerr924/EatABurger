@@ -1,8 +1,10 @@
-<h1>Go ahead... Eat a Burger!</h1>
+<h1><center>Go ahead... Eat a Burger!</center></h1>
+{{!-- <img src = "../public/assets/img/burgerIcon.png" width="50" height="50> --}}
 
 {{!-- row holds burgers - devoured and ready for devouring  --}}
 <div class = "row">
     <div class = "col s6">
+        <center>
         <h2>Which burger would you like to devour?</h2>
 
         <ul>
@@ -12,9 +14,11 @@
             {{/unless}}
         {{/each}}
         </ul>
+        </center>
     </div>
 
     <div class = "col s6">
+        <center>
         <h2>Recently devoured</h2>
 
         <ul>
@@ -24,17 +28,20 @@
             {{/if}}
         {{/each}}
         </ul>
+        </center>
     </div>
 </div>
 
-
-<h2>Cook up your own burger masterpiece!</h2>
 <div class="row">
     <div class="col s12">
-        Name your burger:
-        <div class="input-field inline">
-        <input id="burgerName" type="input">
-        <button type="submit" class="addBurger">Add it to the menu!</button>
+        <center>
+            <h2>Cook up your own burger masterpiece!</h2>
+            
+            <p>Name your burger:</p>
+            <div class="input-field inline">
+            <input id="burgerName" type="input">
+            <button type="submit" class="btn addBurger">Add it to the menu!</button>
 
+        </center>
     </div>
 </div>

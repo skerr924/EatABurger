@@ -12,6 +12,7 @@ h1{
 
 h2{ 
   font-size: 20px;
+  color: rgb(223, 53, 53);
 }
 
 h3, h4, h5{ 
@@ -20,4 +21,25 @@ h3, h4, h5{
 
 li, ul{ 
   font-size: 12px; 
+}
+
+body { 
+  padding: 40px; 
+}
+
+.wrapper {
+  height: 100%;
+  padding: 30px; 
+}
+
+.wrapper{ 
+  background-color: rgba(41, 40, 40, 0.76)
+}
+
+.thumbnail { 
+  size: 100px; 
+}
+
+.deleteBtn{ 
+  background-color: rgb(223, 53, 53);
 }
