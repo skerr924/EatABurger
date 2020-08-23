@@ -24,7 +24,7 @@ This application is designed to be simple and user-friendly.
 
 [Sample HTML](public/assets/img/demoApp.png)
 
-This application is deployed on Heroku and can be visited here: html to be added 
+This application is deployed on Heroku and can be visited here: https://evening-tundra-74754.herokuapp.com/
 
 <a name="lic"></a>
 # License 
